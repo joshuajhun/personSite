@@ -9,7 +9,9 @@
     <div class="slider">
       <ul class="slides" id="main">
         <li>
-          <video  id= "video" src="/assets/about_me_final.m4v" loop="true" autoplay="true" ></video>
+<div id="video">
+   <%= video_tag('about_me_final.m4v', loop:true, autoplay:true) %>
+ </div>
           <div class="row">
             <div class="col s12"><p><br></p></div>
             <div class="col s12"><p><br></p></div>
@@ -37,26 +39,26 @@
           <h5 id="sub-text">"Software is about pushing the limits and effecting positive change in people's lives."</h5>
           <div class="col s12"><p><br></p></div>
           <div class="col s12"><p><br></p></div>
-          <div class="col s12 m6 l3 framework"><img src="/assets/rails.png" /><h6>Rails</h6>
+          <div class="col s12 m6 l3 framework"> <%=image_tag('rails.png') %><h6>Rails</h6>
             <p id='about-me-text'>
               I am proficient in the rails framework and I utilize it to build beautiful applications that powerfully communicate information with ease.
               I enjoy writing <strong>scalable</strong> and <strong>transferable</strong> code that I am excited to share.
 
             </p>
           </div>
-          <div class="col s12 m6 l3 framework"><img src="/assets/javascript.png" /><h6>JavaScript</h6>
+          <div class="col s12 m6 l3 framework"> <%= image_tag('javascript.png') %><h6>JavaScript</h6>
             <p id='about-me-text'>
               JavaScript is something I really appreciate. It's ability to be <strong>functional</strong> and<strong> object-oriented</strong> makes it a powerful tool.
               From <strong> partial functions</strong> to building constructors and classes it makes a very versatile. I desire to continue learning it's amazing frameworks and powerful libraries.
             </p>
           </div>
-          <div class="col s12 m6 l3 framework"><img src="/assets/craft.png" /><h6>Craft</h6>
+          <div class="col s12 m6 l3 framework"> <%= image_tag('craft.png') %>   <h6>Craft</h6>
             <p id='about-me-text'>
               Writing code is hard. Writing good code is even harder. I strive to write agnostic code that sticks to foundational concepts.
               From <strong>TDD</strong> to the<strong> Law of Demeter</strong> these foundational concepts help guide us build strong  maintainable code.
             </p>
           </div>
-          <div class="col s12 m6 l3 framework"><img src="/assets/collaboration.png" /><h6>Collaboration</h6>
+          <div class="col s12 m6 l3 framework"> <%=image_tag('collaboration.png') %> <h6>Collaboration</h6>
             <p id='about-me-text'>
               My best work has been done in a <strong>collaborative environment</strong>. I am a <strong>team player</strong> and I enjoy leading
               and pushing people to give it their all. I am a strong believer in pair programming and it's benefits.
@@ -78,9 +80,9 @@
       <ul class="bxslider">
         <li><div class="card small ">
         <div class="col s12 m6 l2 "><p></p></div>
-        <div class="col s12 m6 l3" class="container"><img src="assets/clouds.gif" /></div>
-        <div class="col s12 m6 l3" class="container"><img src="assets/rain.gif"/></div>
-        <div class="col s12 m6 l3" class="container"><img src="assets/snow.gif"/></div>
+        <div class="col s12 m6 l3" class="container"> <%= image_tag('clouds.gif') %>  </div>
+        <div class="col s12 m6 l3" class="container"> <%= image_tag('rain.gif') %></div>
+        <div class="col s12 m6 l3" class="container"><%= image_tag('snow.gif') %></div>
       </div>
       <div class="container">
           <h6 id="title">TRELORA Leaderboard</h6>
@@ -91,7 +93,7 @@
         </li>
         <li>
           <div class="col s12">
-            <img src="assets/npm.png" class="container">
+          <div class="container">  <%= image_tag('npm.png') %> </div>
           </div>
           <div class="col s12"><p > </p></div>
           <div class="container">
@@ -106,7 +108,7 @@
       </li>
       <li>
         <div class="col s12">
-          <img src="assets/tetris.png" class="container">
+          <div class="container">  <%= image_tag('tetris.png') %> </div>
         </div>
         <div class="col s12"><p > </p></div>
         <div class="container">
@@ -118,7 +120,7 @@
       </li>
 
         <li><div class="col s12">
-          <img src="assets/ticketly.png" class="container">
+          <div class="container">  <%= image_tag('ticketly.png') %> </div>
         </div>
         <div class="col s12"><p > </p></div>
         <div class="container">
@@ -130,7 +132,7 @@
 
         <li>
           <div class="col s12">
-            <img src="assets/rails_engine.png" class="container">
+          <div class="container">  <%= image_tag('rails_engine.png') %> </div>
           </div>
           <div class="col s12"><p > </p></div>
           <div class="container">
